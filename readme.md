@@ -1,3 +1,3 @@
 # Natours project
 
-## First project of advanced css course
+## First project of advanced css/sass course
