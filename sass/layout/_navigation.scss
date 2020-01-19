@@ -61,6 +61,11 @@
 		z-index: 1500;
 		opacity: 0;
 		transition: 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+		@include respond(tab-port) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__list {
@@ -98,6 +103,14 @@
 
 			span {
 				margin-right: 1.5rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 2.5rem;
+			}
+
+			@include respond(phone) {
+				font-size: 2rem;
 			}
 		}
 
