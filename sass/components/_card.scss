@@ -52,6 +52,10 @@
 
 	&:hover &__side--front {
 		transform: rotateY(-180deg);
+
+		@include respond(tab-port) {
+			transform: rotateY(0);
+		}
 	}
 
 	&:hover &__side--back {
