@@ -107,6 +107,10 @@
 		top: 12rem;
 		right: 2rem;
 		width: 75%;
+
+		@include respond(phone) {
+			width: 60%;
+		}
 	}
 
 	&__heading-span {
