@@ -44,8 +44,6 @@
 		@include respond(tab-port) {
 			top: 4.5rem;
 			right: 4.5rem;
-			background-image: none;
-			background-color: $color-primary;
 		}
 
 		@include respond(phone) {
