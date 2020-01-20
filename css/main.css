@@ -1388,24 +1388,15 @@ body {
 
 @media (max-width: 56.25em) {
   .navigation__background {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 100%;
-    border-radius: 0;
+    top: 4.5rem;
+    right: 4.5rem;
   }
 }
 
-.navigation__background.active {
-  -webkit-transform: scale(75);
-          transform: scale(75);
-}
-
-@media (max-width: 56.25em) {
-  .navigation__background.active {
-    left: 0;
+@media (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
   }
 }
 
@@ -1428,11 +1419,6 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-}
-
-.navigation__nav.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .navigation__list {
@@ -1485,6 +1471,16 @@ body {
   color: #55c57a;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(75);
+          transform: scale(75);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  visibility: visible;
 }
 
 .navigation__icon {
