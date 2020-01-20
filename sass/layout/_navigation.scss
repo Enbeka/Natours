@@ -52,6 +52,10 @@
 		}
 	}
 
+	&__background.active {
+		transform: scale(75);
+	}
+
 	&__nav {
 		height: 100vh;
 		width: 100%;
@@ -67,6 +71,11 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
+	}
+
+	&__nav.active {
+		opacity: 1;
+		visibility: visible;
 	}
 
 	&__list {
@@ -125,14 +134,14 @@
 
 	//funcionality
 
-	&__checkbox:checked ~ &__background {
-		transform: scale(75);
-	}
+	// &__checkbox:checked ~ &__background {
+	// 	transform: scale(75);
+	// }
 
-	&__checkbox:checked ~ &__nav {
-		opacity: 1;
-		visibility: visible;
-	}
+	// &__checkbox:checked ~ &__nav {
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// }
 
 	// icon
 
