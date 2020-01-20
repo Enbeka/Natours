@@ -258,6 +258,14 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 56.25em) {
+  .heading-secondary:hover {
+    -webkit-transform: skewY(0deg) skewX(0deg) scale(1);
+            transform: skewY(0deg) skewX(0deg) scale(1);
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -1315,6 +1323,13 @@ body {
   .header {
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
+}
+
+@media (max-width: 56.25em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 90vh);
   }
 }
 
